@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Geometria";
+  src: url("../font/Geometria/Geometria.woff2") format("woff2"),
+  url("../font/Geometria.woff") format("woff");
+}
+@font-face {
+  font-family: "GeometriaExtraBold";
+  src: url("../font/Geometria/Geometria-ExtraBold.woff2") format("woff2"),
+  url("../fonts/Geometria-ExtraBold.woff") format("woff"), url("/fonts/Geometria-ExtraBold.eot") format("eot");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "GeometriaMedium";
+  src: url("../font/Geometria/Geometria-ExtraBold.woff2") format("woff2"),
+  url("../font/Geometria-ExtraBold.woff") format("woff");
+}
+@font-face {
+  font-family: "GilroyLight";
+  src:url("../font/Gilroy-FREE/Gilroy-Light.woff") format("woff"),
+  url("../font/Gilroy-FREE/Gilroy-Light.otf") format("otf");
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Dev-challenge-12</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<div class="popupForm">
+    <div class="wrapper__form">
+    <div class="form">
+        <div class="popupForm__header">
+            <h2 class="popUp__h2">Заповніть форму</h2>
+            <div class="choice">
+                <button class="choice__button--Left active">Фіз.особа</button>
+                <button class="choice__button--Right">Юр.особа</button>
+            </div>
+        </div>
+        <form class="form__physOsoba">
+            <div class="form__column">
+                <label class="form__label--half up">І&#39;мя
+                    <input type="text" class="form__input--half">
+                </label>
+                <label class="form__label--half up">Фамілія
+                    <input type="text" class="form__input--half">
+                </label>
+                <label class="form__label plus">Назва компанії, організації
+                    <input type="text" class="form__input">
+                </label>
+                <label class="upload plus">
+                    + Логотип
+                    <input type="file" class="form__input--loadfile" name="logotyp" accept="image/*">
+                </label>
+                <label class="form__label">Email адреса
+                    <input type="email" class="form__input">
+                </label>
+                <label class="form__label">Номер телефону
+                    <input type="number" class="form__input">
+                </label>
+            </div>
+            <div class="form__column">
+                <label class="form__label up">Країна
+                    <input type="text" class="form__input">
+                </label>
+                <label class="form__label--half">Місто
+                    <input type="text" class="form__input--half">
+                </label>
+                <label class="form__label--half">Штат, район
+                    <input type="text" class="form__input--half">
+                </label>
+                <label class="form__label">Адреса
+                    <input type="text" class="form__input">
+                </label>
+                <label class="form__label--half">Поштовий індекс
+                    <input type="Number" class="form__input">
+                </label>
+            </div>
+        </form>
+    </div>
+    <div class="helpkinds">
+        <h2 class="popUp__h2 helpkinds__h2">Види допомоги</h2>
+        <p>Ви можете змінити вид допомоги</p>
+        <ul class="helpkinds__list" id="change">
+            <li class="helpkinds__item">
+
+                    <div class="helpkind_item_img">
+                        <div class="icon__1"></div>
+                    </div>
+                    <p class="helpkinds__kindName">Зробити</p>
+            </li>
+            <li class="helpkinds__item helpkinds__item--active">
+                <div class="helpkind_item_img">
+                    <div class="icon__2"></div>
+                </div>
+                <p class="helpkinds__kindName">Фінансова допомога</p>
+            </li>
+            <li class="helpkinds__item">
+                <div class="helpkind_item_img">
+                    <div class="icon__3"></div>
+                </div>
+                <p class="helpkinds__kindName">Матеріальна допомога</p>
+            </li>
+            <li class="helpkinds__item">
+                <div class="helpkind_item_img">
+                    <div class="icon__4"></div>
+                </div>
+                <p class="helpkinds__kindName">Волонтерство</p>
+            </li>
+        </ul>
+        <div class="helpkind_item_info"></div>
+        <div class="sposiboplaty helpkind_item_info" >
+            <div class="column__left">
+                <p>Спосіб оплати</p>
+                <div class="sposiboplaty__box">
+                    <a href="#" class="a__form">
+                        <div class="sposiboplaty__card sposiboplaty__card--visa"></div>
+                    </a>
+                    <a href="#" class="a__form">
+                        <div class="sposiboplaty__card sposiboplaty__card--pryvat"></div>
+                    </a>
+                    <a href="#" class="a__form">
+                        <div class="sposiboplaty__card sposiboplaty__card--terminal"></div>
+                    </a>
+                    <a href="#" class="a__form">
+                        <div class="sposiboplaty__card sposiboplaty__card--webmoney"></div>
+                    </a>
+                    <a href="#" class="a__form">
+                        <div class="sposiboplaty__card sposiboplaty__card--paypall"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="column__right">
+                <p>Введіть наступні дані</p>
+                <div class="sposiboplaty__carddata">
+                    <div class="sposiboplaty__carddata__cardnumber">
+                        <p>Номер карти</p>
+                        <input type="number" class="input">
+                        <input type="number" class="input">
+                        <input type="number" class="input">
+                        <input type="number" class="input">
+                    </div>
+                    <div class="sposiboplaty__termindii">
+                        <p>Термін дії</p>
+                        <input type="month" class="input input_wide">
+                    </div>
+                    <div class="sposiboplaty__cvv">
+                        <p>CVV</p>
+                        <input type="number" class="input input_wide">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="helpkind_item_info"></div>
+        <div class="helpkind_item_info"></div>
+    </div>
+    <button class="button button__help">Допомогти</button>
+</div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
