@@ -8,6 +8,7 @@ body{
 }
 .popupForm {
   position: absolute;
+  min-width:480px;
   width:100%;
   top:0;
   left:0;
@@ -34,9 +35,6 @@ body{
   position: relative;
   border:1px solid white;
   margin:0 auto;
-  &>*{
-    outline:1px solid gray;
-  }
 }
 form.form__physOsoba {
   input {

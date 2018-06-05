@@ -4,11 +4,11 @@ var gulp        = require('gulp'),
     del         = require('del'),
     imagemin    = require('gulp-imagemin'),
     pngquant    = require('imagemin-pngquant'),
-    autoprefixer=require('gulp-autoprefixer');
+    autoprefixer = require('gulp-autoprefixer');
 gulp.task('scssToCss',function () {
     return gulp.src("app/scss/*.scss")
         .pipe(sass())
-        .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Створюєм префікси
+        .pipe(autoprefixer({ cascade: true })) // Створюєм префікси
         .pipe(gulp.dest("app/css"))
         .pipe(browserSync.reload({stream: true})) //оновлення сторінки при зміні scss
 });

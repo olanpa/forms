@@ -98,6 +98,7 @@ body {
 
 .popupForm {
   position: absolute;
+  min-width: 480px;
   width: 100%;
   top: 0;
   left: 0;
@@ -118,58 +119,50 @@ body {
   background-color: white;
   max-width: 1340px;
   width: 98%;
-  -webkit-border-radius: 15px;
-          border-radius: 15px;
+  border-radius: 15px;
   position: relative;
   border: 1px solid white;
   margin: 0 auto; }
-  .wrapper__form > * {
-    outline: 1px solid gray; }
 
 form.form__physOsoba {
   overflow: hidden; }
   form.form__physOsoba input {
     background-color: #f3f7fa;
-    -webkit-border-radius: 5px;
-            border-radius: 5px;
+    border-radius: 5px;
     position: relative; }
 
 .popupForm__header {
   width: 600px;
   margin: 0 0 0 25%;
-  padding: 0;
-  outline: 1px solid grey; }
+  padding: 0; }
 
-div.choice {
+.choice {
   width: 230px;
   height: 40px;
   margin: 0 auto;
   overflow: hidden;
   display: table;
   color: #363b5d;
-  -webkit-border-radius: 5px;
-          border-radius: 5px; }
-  div.choice .choice__button--Left, div.choice .choice__button--Right {
+  border-radius: 5px; }
+  .choice .choice__button--Left, .choice .choice__button--Right {
     margin: 0;
     float: left;
     width: 50%;
     height: 40px;
     cursor: pointer; }
-  div.choice .active {
+  .choice .active {
     background-color: #363b5d;
     color: #fff; }
 
 .form, .helpkinds {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-border-radius: 15px;
-          border-radius: 15px;
+  border-radius: 15px;
   width: 1340px;
   padding: 0 60px 0 140px; }
 
 .form__column {
   float: left;
-  width: -webkit-calc(50% + 110px);
   width: calc(50% + 110px);
   position: relative;
   min-height: 380px; }
@@ -230,12 +223,10 @@ label.upload {
 
 .helpkinds__list {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 15px;
@@ -259,7 +250,6 @@ label.upload {
     left: 90px;
     top: 50%;
     -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
             transform: translateY(-50%); }
   .helpkinds__item:hover p {
     color: black;
@@ -267,14 +257,12 @@ label.upload {
   .helpkinds__item:hover .helpkind_item_img {
     background: #9c5d9a;
     -webkit-transition: background 1s;
-    -o-transition: background 1s;
     transition: background 1s; }
     .helpkinds__item:hover .helpkind_item_img div {
       -webkit-filter: brightness(150%);
               filter: brightness(150%);
       -webkit-transition: -webkit-filter 0.3s;
       transition: -webkit-filter 0.3s;
-      -o-transition: filter 0.3s;
       transition: filter 0.3s;
       transition: filter 0.3s, -webkit-filter 0.3s; }
 
@@ -284,14 +272,12 @@ label.upload {
   width: 80px;
   height: 80px;
   border: 2px solid #dbe5f0;
-  -webkit-border-radius: 15px;
-          border-radius: 15px;
+  border-radius: 15px;
   cursor: pointer; }
 
 .icon__1, .icon__2, .icon__3, .icon__4 {
   display: inline-block;
   position: absolute;
-  outline: yellowgreen;
   width: 40px;
   height: 40px;
   background: url("../img/icons/sprites.png") no-repeat center center;
@@ -325,7 +311,6 @@ label.upload {
   width: 100%;
   display: none;
   -webkit-transition: height 1s;
-  -o-transition: height 1s;
   transition: height 1s;
   height: auto; }
   .helpkind_item_info.active {
@@ -348,17 +333,13 @@ label.upload {
 .button.button__help {
   width: 300px;
   height: 60px;
-  background: -webkit-linear-gradient(45deg, #e73452, #9165a8);
-  background: -o-linear-gradient(45deg, #e73452, #9165a8);
   background: linear-gradient(45deg, #e73452, #9165a8);
   color: white;
   font: 18px "Geometria";
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
+  border-radius: 10px;
   -webkit-box-shadow: 0px 0px 15px;
           box-shadow: 0px 0px 15px;
   display: block;
-  margin: 50px -webkit-calc(50% - 150px) 80px;
   margin: 50px calc(50% - 150px) 80px; }
   .button.button__help:hover {
     -webkit-filter: hue-rotate(360deg);
@@ -366,31 +347,26 @@ label.upload {
     color: #c5d5e6;
     -webkit-transition: color 0.5s, -webkit-filter 1s;
     transition: color 0.5s, -webkit-filter 1s;
-    -o-transition: filter 1s, color 0.5s;
     transition: filter 1s, color 0.5s;
     transition: filter 1s, color 0.5s, -webkit-filter 1s; }
 
 .sposiboplaty {
   position: relative;
   border: 2px solid #c5d5e6;
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
+  border-radius: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
   min-height: 250px;
   padding: 15px 0 0 20px;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-flow: row wrap;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap; }
   .sposiboplaty p {
@@ -399,8 +375,7 @@ label.upload {
     width: 100%;
     margin: 0 0 5px; }
   .sposiboplaty div {
-    -webkit-border-radius: 10px;
-            border-radius: 10px; }
+    border-radius: 10px; }
 
 .column__left {
   width: 60%;
@@ -413,17 +388,14 @@ label.upload {
 
 .sposiboplaty__box {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   width: 100%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-flow: row wrap;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap; }
 
@@ -432,7 +404,6 @@ label.upload {
   height: 85px;
   margin: 0 18px 18px 0;
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 auto;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
   background-image: url("../img/cards/css_sprites.png"); }
@@ -460,15 +431,12 @@ label.upload {
   height: 188px;
   background-color: #c5d5e6;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-flow: row wrap;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap; }
   .sposiboplaty__carddata p {
@@ -477,33 +445,28 @@ label.upload {
     height: 40px;
     padding: 1px;
     margin: 5px;
-    -webkit-border-radius: 5px;
-            border-radius: 5px;
+    border-radius: 5px;
     text-align: center; }
 
 .sposiboplaty__carddata__cardnumber {
   width: 100%;
   height: 60px;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-flow: row wrap;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
   margin: 10px 15px; }
   .sposiboplaty__carddata__cardnumber p {
     -webkit-box-flex: 1;
-    -webkit-flex: 1 100%;
         -ms-flex: 1 100%;
             flex: 1 100%; }
 
 .input {
   width: 74px;
   -webkit-box-flex: 1;
-  -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
   background-color: #f3f7fa; }
@@ -520,10 +483,8 @@ label.upload {
   height: 25px;
   position: absolute;
   top: -13px;
-  left: -webkit-calc(32% - 20px);
   left: calc(32% - 20px);
   -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
           transform: rotate(45deg); }
 
 @media (max-width: 1439px) {
@@ -535,26 +496,21 @@ label.upload {
     overflow-x: hidden; }
   .form, .helpkinds {
     padding: 10px;
-    width: -webkit-calc(100% - 20px);
     width: calc(100% - 20px); }
   .form__physOsoba {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -webkit-flex-flow: row wrap;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
     -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between; }
   .form__column {
     float: none;
     -webkit-box-flex: 1;
-    -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1; }
   .popupForm__header {
@@ -575,7 +531,6 @@ label.upload {
 @media (max-width: 1070px) {
   .sposiboplaty.helpkind_item_info {
     -webkit-box-pack: center;
-    -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
     height: auto; }
@@ -583,10 +538,18 @@ label.upload {
     width: 50%; } }
 
 @media (max-width: 730px) {
+  .wrapper__form {
+    width: 100%; }
+  .popupForm__header {
+    min-width: 480px;
+    width: 100%;
+    display: inline-block; }
   .popupForm {
     width: 100%;
     padding: 10px 0; }
-  .popupForm h2 {
-    font-size: 7vw; }
-  .wrapper__form {
-    width: 100%; } }
+    .popupForm h2.popUp__h2 {
+      text-align: center;
+      font-size: 7vw; }
+  .choice {
+    margin: 0 auto;
+    width: 80%; } }
