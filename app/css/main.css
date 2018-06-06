@@ -44,20 +44,20 @@ table {
 
 @font-face {
   font-family: "Geometria";
-  src: url("../font/Geometria/Geometria.woff2") format("woff2"), url("../font/Geometria.woff") format("woff"); }
+  src: url("../font/Geometria/Geometria.woff2") format("woff2"), url("../font/Geometria/Geometria.woff") format("woff"), url("../font/Geometria/Geometria.eot") format("eot"); }
 
 @font-face {
   font-family: "GeometriaExtraBold";
-  src: url("../font/Geometria/Geometria-ExtraBold.woff2") format("woff2"), url("../fonts/Geometria-ExtraBold.woff") format("woff"), url("/fonts/Geometria-ExtraBold.eot") format("eot");
+  src: url("../font/Geometria/Geometria-ExtraBold.woff2") format("woff2"), url("../font/Geometria/Geometria-ExtraBold.woff") format("woff"), url("/font/Geometria/Geometria-ExtraBold.eot") format("eot");
   font-weight: bold; }
 
 @font-face {
   font-family: "GeometriaMedium";
-  src: url("../font/Geometria/Geometria-ExtraBold.woff2") format("woff2"), url("../font/Geometria-ExtraBold.woff") format("woff"); }
+  src: url("../font/Geometria/Geometria-ExtraBold.woff2") format("woff2"), url("../font/Geometria/Geometria-ExtraBold.woff") format("woff"), url("../font/Geometria/Geometria-ExtraBold.eot") format("eot"); }
 
 @font-face {
   font-family: "GilroyLight";
-  src: url("../font/Gilroy-FREE/Gilroy-Light.woff") format("woff"), url("../font/Gilroy-FREE/Gilroy-Light.otf") format("otf"); }
+  src: url("../font/Gilroy-FREE/Gilroy-Light.woff") format("woff"), url("../font/Gilroy-FREE/Gilroy-Light.otf") format("otf"), url("../font/Gilroy-FREE/Gilroy-Light.eot") format("eot"); }
 
 @-webkit-keyframes shake {
   0% {
